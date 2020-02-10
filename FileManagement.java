@@ -34,7 +34,7 @@ public class FileManagement{
 		System.out.println("Loading a list of files...");
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile()) {
-				if(listOfFiles[i].getName().equals("FileManagement.java") || listOfFiles[i].getName().equals("FileManagement.class")  || listOfFiles[i].getName().equals("FileObject.java") || listOfFiles[i].getName().equals("FileObject.class") || listOfFiles[i].getName().equals(".gitignore") ){
+				if(listOfFiles[i].getName().equals("FileManagement.java") || listOfFiles[i].getName().equals("FileManagement.class")  || listOfFiles[i].getName().equals("FileObject.java") || listOfFiles[i].getName().equals("FileObject.class") || listOfFiles[i].getName().equals(".gitignore") || listOfFiles[i].getName().equals("README.md")){
 						continue;
 				}else{
 						fileObjects.add(new FileObject(listOfFiles[i].getName()));
